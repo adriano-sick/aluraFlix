@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>aluraFlix - aula4</title>
 
-        <script type="text/javascript" src="./JS/aluraflix.js" ></script>
+        <script type="text/javascript" src="./JS/aluraflix.js" defer></script>
         <link rel="stylesheet" href="./CSS/style.css">    
 
     </head>
@@ -18,7 +18,11 @@
             <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
         </div> 
 
-        <div id="catalogo"></div>
+        <div id="catalogo">
+            <span id='aviso'>Insira a URL da imagem do filme para adiciona-lo</span>
+            <input id='input'>
+            <button id='add' onclick="adicionarFilme()">Adicionar!</button>
+        </div>
 
         <a href="https://alura.com.br/" target="_blank">
             <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
