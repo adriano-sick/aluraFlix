@@ -30,7 +30,7 @@ function adicionarFilme() {
     var novaLista = []; //lista auxiliar, criada a cada vez que essa funcao e chamada
     var input = document.getElementById('input').value;
 
-    if(lista.indexOf(input) == -1) { //verificacao pra ver se url repete na lista        
+    if(lista.indexOf(input) == -1 && input.endsWith("jpg")) { //verificacao pra ver se url repete na lista  e se termina com jpg      
         novaLista.push(input);
         spanImg(novaLista); //chama a funcao para adicionar a imagem da lista auxiliar
         aviso.innerHTML = "Filme Adicionado!"
