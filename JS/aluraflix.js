@@ -37,6 +37,6 @@ function adicionarFilme() {
         lista.push(novaLista[0]); //manda valor adicionado na lista auxiar para a lista principal.
     }
     else {
-        aviso.innerText = "Essa URL ja foi Adicionada!!!"
+        aviso.innerText = "Essa URL nao e valida!!!"
     }    
 }
