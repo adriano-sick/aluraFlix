@@ -35,8 +35,11 @@ function adicionarFilme() {
         spanImg(novaLista); //chama a funcao para adicionar a imagem da lista auxiliar
         aviso.innerHTML = "Filme Adicionado!"
         lista.push(novaLista[0]); //manda valor adicionado na lista auxiar para a lista principal.
+        document.getElementById('input').value = "";
+
     }
     else {
         aviso.innerText = "Essa URL nao e valida!!!"
+        document.getElementById('input').value = "";
     }    
 }
